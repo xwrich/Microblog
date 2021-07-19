@@ -2,6 +2,14 @@
 项目介绍：一个化繁为简的个人微型博客项目，支持CRUD功能，目前只有一个后端和博客前端展示页面，没有实现后台管理功能。
 
 ## 项目预览
+
+预览地址：http://localhost:8080/blogs
+
+登录账户：admin
+
+登录密码：111111
+
+
 登录
 ![](https://cdn.jsdelivr.net/gh/OriginalCoder0/gallery@master/images/1626612263901-login.png)
 
