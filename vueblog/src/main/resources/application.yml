@@ -1,0 +1,43 @@
+# DataSource Config
+
+server:
+    # 端口
+    port: 8081
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3307/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+        username: "root"
+        password: "001314"
+
+    redis:
+        host: 127.0.0.1
+        port: 6379
+
+mybatis-plus:
+    mapper-locations: classpath*:/mapper/**Mapper.xml
+
+shiro-redis:
+    enabled: true
+    redis-manager:
+        host: 127.0.0.1
+        port: 6379
+        password:
+        lettuce:
+            pool:
+                #最大连接数，默认8
+                max-active: 1024
+                #最大连接阻塞等待时间，默认-1
+                max-wait: 10000ms
+                #最大空闲连接
+                max-idle: 200
+                #最小空闲连接
+                min-idle: 5
+
+rich:
+    jwt:
+        # 加密密钥
+        secret: f4e2e52034348f86b67cde581c0f9eb5
+        # Token有效时长，7天
+        expire: 604800
+        header: Authorization
